@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/user"
+        android:icon="@drawable/baseline_people_24"
+        android:title="user" />
+    <item android:id="@+id/password"
+        android:icon="@drawable/baseline_password_24"
+        android:title="password" />
+    <item android:id="@+id/email"
+        android:icon="@drawable/baseline_attach_email_24"
+        android:title="email" />
+    <item android:id="@+id/addcar"
+        android:icon="@drawable/car_info"
+        android:title="addcar" />
+</menu>

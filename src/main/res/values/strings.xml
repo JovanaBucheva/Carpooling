@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Car Pooling</string>
+    <string name="opening">Are you in need for a ride?\n You want to offer a ride?</string>
+    <string name="welcome">Car Pooling App</string>
+    <string-array name="purpose">
+        <item>Choose:</item>
+        <item>Driver</item>
+        <item>Passenger</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="error_fill_fields">Please fill out all fields.</string>
+    <string name="error_invalid_input">Invalid input! Please enter valid numbers.</string>
+    <string name="success_save">Car information saved successfully!</string>
+    <string name="error_save">Failed to save car information. Try again.</string>
+</resources>

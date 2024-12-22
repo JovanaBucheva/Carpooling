@@ -1,0 +1,99 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <!-- Status 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <View
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/circle_grey"
+                android:id="@+id/status_circle_1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Waiting for the driver to answer"
+                android:textSize="16sp"
+                android:id="@+id/status_text_1" />
+        </LinearLayout>
+
+        <!-- Line 1 -->
+
+        <!-- Status 2 -->
+        <View
+            android:id="@+id/status_line_1"
+            android:layout_width="2dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="start"
+            android:background="@drawable/line_grey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <View
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/circle_grey"
+                android:id="@+id/status_circle_2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Ride currently in progress"
+                android:textSize="16sp"
+                android:id="@+id/status_text_2" />
+        </LinearLayout>
+
+        <!-- Line 2 -->
+        <View
+            android:layout_width="2dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="start"
+            android:background="@drawable/line_grey"
+            android:id="@+id/status_line_2" />
+
+        <!-- Status 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <View
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/circle_grey"
+                android:id="@+id/status_circle_3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="The ride has ended"
+                android:textSize="16sp"
+                android:id="@+id/status_text_3" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+

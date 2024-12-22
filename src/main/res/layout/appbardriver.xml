@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#138E84"
+    app:titleTextColor="@color/white">
+
+    <!-- Use ConstraintLayout for better alignment -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <!-- Title aligned at the start -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <!-- "Working" TextView -->
+        <TextView
+            android:id="@+id/workingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Working"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toStartOf="@id/workingSwitch"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="username"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star"
+            android:id="@+id/star"
+            app:layout_constraintStart_toEndOf="@id/user"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/raiting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.5"
+            app:layout_constraintStart_toEndOf="@id/star"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:visibility="gone"/>
+
+        <!-- Switch next to "Working" -->
+        <Switch
+            android:id="@+id/workingSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:checked="false"
+            android:padding="5dp"
+            app:layout_constraintEnd_toStartOf="@id/car_info_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed" />
+
+        <!-- Car info icon at the end -->
+        <ImageButton
+            android:id="@+id/car_info_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:src="@drawable/car_info"
+            android:padding="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Car Info Icon"
+            app:tint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="gone"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.appcompat.widget.Toolbar>

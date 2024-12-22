@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:background="#f5f5f5"
+    android:id="@+id/main"
+    tools:context=".login">
+    <!-- The single child of ScrollView should be a LinearLayout -->
+
+
+
+            <!-- Login Fragment -->
+            <fragment
+                android:id="@+id/login_fragment"
+                android:name="com.example.carpooling.log"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                tools:layout="@layout/fragment_log" />
+
+            <!-- Register Fragment (Visible only in landscape mode) -->
+            <fragment
+                android:id="@+id/register_fragment"
+                android:name="com.example.carpooling.Register"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                tools:layout="@layout/fragment_register"
+                android:background="#84138E84"/>
+
+        </LinearLayout>
+
